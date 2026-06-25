@@ -1,16 +1,75 @@
-# React + Vite
+# Ampress Energy
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+Ampress Energy is a modern landing page and inquiry experience for an EV battery service business. The site showcases battery solutions, repair services, and a contact form that helps customers submit inquiries directly through WhatsApp.
 
-Currently, two official plugins are available:
+## What this project includes
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- A polished React + Vite frontend for the company brand and services
+- A service inquiry form with image uploads and location validation
+- A small Express backend that sends inquiry messages to WhatsApp using the WhatsApp Cloud API
+- A clean, responsive UI built with React and custom styling
 
-## React Compiler
+## Project structure
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- src/ - frontend React application
+- src/components/ - reusable UI sections and cards
+- server/ - backend service for WhatsApp message handling
+- public/ - static assets
 
-## Expanding the Oxlint configuration
+## Tech stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+- React 19
+- Vite
+- Framer Motion
+- Lucide React
+- React Router
+- Express
+- Multer
+- Node Fetch
+
+## Getting started
+
+### 1. Install dependencies
+
+```bash
+npm install
+cd server
+npm install
+```
+
+### 2. Configure environment variables
+
+Create a .env file inside the server folder with your WhatsApp credentials:
+
+```env
+WHATSAPP_ACCESS_TOKEN=your_access_token
+WHATSAPP_PHONE_NUMBER_ID=your_phone_number_id
+PORT=4000
+CLIENT_ORIGIN=http://localhost:5173
+```
+
+### 3. Run the app
+
+Start the frontend:
+
+```bash
+npm run dev
+```
+
+Start the backend:
+
+```bash
+cd server
+node src/index.js
+```
+
+## Features
+
+- Service information and company highlights
+- Inquiry form for name, phone, address, and issue description
+- Optional image upload support
+- WhatsApp-based inquiry submission for local service availability
+
+## Notes
+
+The frontend currently restricts service requests to customers located in Jamshedpur, Jharkhand, and the inquiry flow is designed to open a WhatsApp chat with the business contact.
