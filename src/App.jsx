@@ -240,10 +240,9 @@ function App() {
         <section className="section">
           <h3 style={{ color: '#00d4ff', textTransform: 'uppercase', letterSpacing: '0.35em', fontSize: '0.8rem', marginBottom: '0.8rem' }}>Contact</h3>
           <div className="card" style={{ display: 'grid', gap: '1rem' }}>
-            <div>Phone: +91 98765 43210</div>
-            <div>WhatsApp: +91 98765 43210</div>
+            <div>Phone: +91 93342 89477</div>
+            <div>WhatsApp: +91 93342 89477</div>
             <div>Email: support@ampressenergy.com</div>
-            <div>Workshop: Banjara Hills, Hyderabad</div>
           </div>
         </section>
       </main>
